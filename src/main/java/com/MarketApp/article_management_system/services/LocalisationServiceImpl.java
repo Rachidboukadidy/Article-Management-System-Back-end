@@ -1,18 +1,12 @@
 package com.MarketApp.article_management_system.services;
 
-import com.MarketApp.article_management_system.dto.Request.ArticleRequest;
 import com.MarketApp.article_management_system.entities.Localisation;
-import com.MarketApp.article_management_system.entities.User;
 import com.MarketApp.article_management_system.repositories.LocalisationRepo;
 import com.MarketApp.article_management_system.repositories.UserRepo;
 import com.MarketApp.article_management_system.services.interfaces.LocalisationService;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.maps.model.LatLng;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 import com.google.maps.GeoApiContext;
 import com.google.maps.GeocodingApi;
 import com.google.maps.model.GeocodingResult;

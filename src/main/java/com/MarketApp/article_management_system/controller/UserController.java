@@ -19,6 +19,7 @@ public class UserController {
     @Autowired
     private CategoryService categoryService;
 
+
     @PostMapping
     public ResponseEntity<UserResponse> addUser(@RequestBody UserRequest userRequest) {
         UserResponse userResponse = userService.addUser(userRequest);

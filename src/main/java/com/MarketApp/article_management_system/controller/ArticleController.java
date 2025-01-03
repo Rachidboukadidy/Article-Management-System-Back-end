@@ -3,7 +3,6 @@ package com.MarketApp.article_management_system.controller;
 import com.MarketApp.article_management_system.dto.Request.ArticleRequest;
 import com.MarketApp.article_management_system.dto.Response.ArticleResponse;
 import com.MarketApp.article_management_system.repositories.CategoryRepo;
-import com.MarketApp.article_management_system.repositories.LocalisationRepo;
 import com.MarketApp.article_management_system.repositories.UserRepo;
 import com.MarketApp.article_management_system.services.interfaces.ArticleService;
 import com.MarketApp.article_management_system.services.interfaces.LocalisationService;

@@ -1,0 +1,46 @@
+
+server:
+  port: 8089
+# MariaDB DataSource Configuration
+spring:
+  application:
+    name: article-management-system
+
+  datasource:
+    url: jdbc:mariadb://localhost:3306/articleDatabase
+    username: root
+    password:
+    driver-class-name: org.mariadb.jdbc.Driver
+  ## JPA and Hibernate Configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect
+        format_sql: true
+    show-sql: true
+  mail:
+    host: localhost
+    port: 1025
+    username: market
+    password: market
+    properties:
+      mail:
+        smtp:
+          trust: "*"
+        auth: true
+        starttls:
+          enable: true
+        connectiontimeout: 5000
+        timeout: 3000
+        writetimeout: 5000
+
+application:
+  security:
+    jwt:
+      secret-key: 3c7877391ff986e1ad4a505f8cb9a059918d69752f858aa5a5b85bb27e2da442
+      expiration: 86400000
+  mailing:
+    frontend:
+      activation-url: http://localhost:4200/ativate-account
